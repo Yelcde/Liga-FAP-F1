@@ -2,6 +2,14 @@
     text-align: center;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    background-color:black;
     color: white;
+}
+
+.nav-menu{
+    display: grid;
+    column-gap: 40px ;
+    background-color:#303030;
+    color: #c4c4c4;
+    text-decoration:  none;
 }
