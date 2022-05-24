@@ -7,8 +7,8 @@
   text-decoration: none;
 }
 
-/* Menu dropdown sem flex
-ul {
+.nav-menu ul,
+.nav-menu li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,20 +16,30 @@ ul {
   background-color: #303030;
 }
 
-li {
+.nav-menu > ul > li {
   float: left;
 }
 
-li a,
+.nav-menu.li,
+.nav-menu.a,
 .dropbtn-cat {
   display: inline-block;
   color: white;
+  background-color: #303030;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a,
+.novidades a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: #303030;
+}
+
+.nav-menu.li,
+.nav-menu.a,
 .dropbtn-sobre {
   display: inline-block;
   background-color: #303030;
@@ -74,6 +84,7 @@ li.dropbtn-sobre {
 
 .dropdown-content-cat a {
   color: #c4c4c4;
+  background-color: #303030;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -82,6 +93,7 @@ li.dropbtn-sobre {
 
 .dropdown-content-sobre a {
   color: #c4c4c4;
+  background-color: #303030;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -95,7 +107,6 @@ li.dropbtn-sobre {
 .dropdown-sobre:hover .dropdown-content-sobre {
   display: block;
 }
-*/
 
 .nav-menu {
   display: flex;
@@ -132,7 +143,7 @@ li.dropbtn-sobre {
 .nav-menu h3 {
   margin: 0 0 0 1em;
 }
-
+/*
 .nav-menu > ul,
 .nav-menu > li {
   display: flex;
@@ -144,7 +155,7 @@ li.dropbtn-sobre {
   margin: 0 0 0 0;
   padding: 0%;
 }
-
+*/
 .nav-menu > a {
   background-color: #303030;
 }
@@ -173,4 +184,49 @@ button {
   margin: 0;
   padding: 1.5em;
   border: 0;
+}
+
+.botoes-redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes-redes-sociais > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em 0.4em 1em;
+  margin: 0 0.05em;
+  background-color: #303030;
+}
+
+.botoes-redes-sociais > li > a,
+.botoes-redes-sociais > li > a > img {
+  background-color: #303030;
+}
+
+.box-youtube:hover,
+.box-youtube:hover > a,
+.box-youtube:hover > a > img {
+  background-color: #ff0000;
+}
+
+.box-instagram:hover,
+.box-instagram:hover > a,
+.box-instagram:hover > a > img {
+  background-color: #c0007a;
+}
+
+.box-twitter:hover,
+.box-twitter:hover > a,
+.box-twitter:hover > a > img {
+  background-color: #029abc;
+}
+
+.box-facebook:hover,
+.box-facebook:hover > a,
+.box-facebook:hover > a > img {
+  background-color: #021fb5;
 }
