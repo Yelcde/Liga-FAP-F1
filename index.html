@@ -1,178 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="1366-styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="1366-styles.css" />
+  </head>
 
-<body>
-  <nav>
-    <div class="nav-menu">  
-      <ul>
-        <li>FAP <img id="logo-f1" src="imagens/Logo-F1.svg" alt=""></li>
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Novidades</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><img id="user-icon" src="/imagens/User-Icon.svg" alt=""></li>
-      </ul>
-    </div>
-  
-  </nav>
-  
-  <header>
-    <video src="blank"></video>
-  </header>
-  
-  <main>
-    
-    <div class="Categorias">
-      
-      <p>Categorias</p>
-      
-      <ul>
-        
-        <li>
-          <img src="imagens/Logo-cat-ouro.svg" alt="">
-          <a href="#"></a>
-        </li>
-        
-        <li>
-          <img src="imagens/Logo-cat-ouro.svg" alt="">
-          <a href="#"></a>
-        </li>
-        
-        <li>
-          <img src="imagens/Logo-cat-ouro.svg" alt="">
-          <a href="#"></a>
-        </li>
-        
-        <li>
-          <img src="imagens/Logo-cat-ouro.svg" alt="">
-          <a href="#"></a>
-        </li>
-
-      </ul>
-      
-      <button>
-        <img src="imagens/seta-esquerda.svg" alt="">
-      </button>
-      
-      <button>
-        <img src="imagens/seta-direita.svg" alt="">
-      </button>
-    
-    </div>
-
-    <div class="Calendario">
-      <p>Calendario</p>
-      <div class="Botoes-calendario">
-        <button>Diamante</button>
-        <button>Ouro</button>
-        <button>Prata</button>
-        <button>Bronze</button>
-        <button>F 2</button>
-      </div>
-
-      <div class="cards-calendario">
-        
+  <body>
+    <nav>
+      <div class="nav-menu">
+        <h3>FAP <img id="logo-f1" src="imagens/Logo-F1.svg" alt="" /></h3>
         <ul>
-          
-          <li>
-            <p>CORRIDA</p>
-            <p>1</p>
-            <img src="imagens/bandeira-china.svg" alt="">
-            <p>CHINA</p>
-            <P>18 JAN 22</P>
-            <P>21:00</P>
+          <li class="dropdown-cat">
+            <a href="javascript:void(0)" class="dropbtn-cat">Categorias</a>
+            <div class="dropdown-content-cat">
+              <a href="#">Diamante</a>
+              <a href="#">Ouro</a>
+              <a href="#">Prata</a>
+              <a href="#">Bronze</a>
+              <a href="#">F 2</a>
+            </div>
+          </li>
+          <li><a href="#">Novidades</a></li>
+          <li class="dropdown-sobre">
+            <a href="javascript:void(0)" class="dropbtn-sobre">Sobre</a>
+            <div class="dropdown-content-sobre">
+              <a href="#">Sobre</a>
+              <a href="">Regras</a>
+            </div>
+          </li>
+        </ul>
+        <div class="user-icon">
+          <a href="#"
+            ><img id="user-icon" src="imagens/User-Icon.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <video src="blank"></video>
+    </header>
+
+    <main>
+      <div class="categorias">
+        <span>Categorias</span>
+
+        <ul>
+          <li class="card-cat">
+            <img src="imagens/Logo-cat-ouro.svg" alt="" />
+            <a href="#"></a>
           </li>
 
-          <li>
-            <p>CORRIDA</p>
-            <p>1</p>
-            <img src="imagens/bandeira-china.svg" alt="">
-            <p>CHINA</p>
-            <P>18 JAN 22</P>
-            <P>21:00</P>
+          <li class="card-cat">
+            <img src="imagens/Logo-cat-ouro.svg" alt="" />
+            <a href="#"></a>
           </li>
-          
-          <li>
-            <p>CORRIDA</p>
-            <p>1</p>
-            <img src="imagens/bandeira-china.svg" alt="">
-            <p>CHINA</p>
-            <P>18 JAN 22</P>
-            <P>21:00</P>
+
+          <li class="card-cat">
+            <img src="imagens/Logo-cat-ouro.svg" alt="" />
+            <a href="#"></a>
           </li>
-          
-          <li>
-            <p>CORRIDA</p>
-            <p>1</p>
-            <img src="imagens/bandeira-china.svg" alt="">
-            <p>CHINA</p>
-            <P>18 JAN 22</P>
-            <P>21:00</P>
+
+          <li class="card-cat">
+            <img src="imagens/Logo-cat-ouro.svg" alt="" />
+            <a href="#"></a>
           </li>
-          
-          <li>
-            <p>CORRIDA</p>
-            <p>1</p>
-            <img src="imagens/bandeira-china.svg" alt="">
-            <p>CHINA</p>
-            <P>18 JAN 22</P>
-            <P>21:00</P>
+
+          <li class="card-cat">
+            <img src="imagens/Logo-cat-ouro.svg" alt="" />
+            <a href="#"></a>
           </li>
-          
         </ul>
 
         <button>
-          <img src="imagens/seta-esquerda.svg" alt="">
+          <img src="imagens/seta-esquerda.svg" alt="" />
         </button>
-        
+
         <button>
-          <img src="imagens/seta-direita.svg" alt="">
+          <img src="imagens/seta-direita.svg" alt="" />
         </button>
-
       </div>
 
-      <div class="midias-sociais">
-        
-        <ul class="botoes-redes-sociais">
+      <div class="Calendario">
+        <p>Calendario</p>
+        <div class="Botoes-calendario">
+          <button>Diamante</button>
+          <button>Ouro</button>
+          <button>Prata</button>
+          <button>Bronze</button>
+          <button>F 2</button>
+        </div>
 
-          <li class="box-youtube">
-            <a href="#"><img src="imagens/logo-youtube.svg" alt=""></a>
-            <img src="" alt="">
-          </li>
-          
-          <li class="box-instagram">
-            <a href="#"><img src="imagens/logo-instagram.svg" alt=""></a>
-            <img src="" alt="">
-          </li>
+        <div class="cards-calendario">
+          <ul>
+            <li>
+              <p>CORRIDA</p>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
 
-          <li class="box-twitter">
-            <a href="#"><img src="imagens/logo-twitter.svg" alt=""></a>
-            <img src="" alt="">
-          </li>
+            <li>
+              <p>CORRIDA</p>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
 
-          <li class="box-facebook">
-            <a href="#"><img src="imagens/logo-facebook.svg" alt=""></a>
-            <img src="" alt="">
-          </li>
-        </ul>
+            <li>
+              <p>CORRIDA</p>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
 
+            <li>
+              <p>CORRIDA</p>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+
+            <li>
+              <p>CORRIDA</p>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+          </ul>
+
+          <button>
+            <img src="imagens/seta-esquerda.svg" alt="" />
+          </button>
+
+          <button>
+            <img src="imagens/seta-direita.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="midias-sociais">
+          <ul class="botoes-redes-sociais">
+            <li class="box-youtube">
+              <a href="#"><img src="imagens/logo-youtube.svg" alt="" /></a>
+              <img src="" alt="" />
+            </li>
+
+            <li class="box-instagram">
+              <a href="#"><img src="imagens/logo-instagram.svg" alt="" /></a>
+              <img src="" alt="" />
+            </li>
+
+            <li class="box-twitter">
+              <a href="#"><img src="imagens/logo-twitter.svg" alt="" /></a>
+              <img src="" alt="" />
+            </li>
+
+            <li class="box-facebook">
+              <a href="#"><img src="imagens/logo-facebook.svg" alt="" /></a>
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
       </div>
+    </main>
 
-      
-    
-
-    </div>
-  </main>
-
-  <footer>
-
-  </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
