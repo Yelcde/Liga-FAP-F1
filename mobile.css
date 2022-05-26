@@ -165,9 +165,6 @@ header iframe {
   width: 100%;
 }
 
-@media screen and (min-width: 820px) {
-}
-
 .categorias {
   display: flex;
   align-items: center;
@@ -180,6 +177,7 @@ header iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .categorias li {
@@ -187,6 +185,7 @@ header iframe {
 }
 
 .categorias li img {
+  width: 100%;
 }
 
 .video {
@@ -224,6 +223,7 @@ header iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .botoes-calendario button,
@@ -271,6 +271,7 @@ header iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   gap: 1.5em;
   padding: 0;
