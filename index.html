@@ -53,7 +53,21 @@
     </nav>
 
     <header>
-      <video src="blank"></video>
+      <iframe
+        width="1536"
+        height="562"
+        src="https://www.youtube.com/embed/zxdRgKso69Q"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <!--
+      <video id="f1esports-video" class="video-bg-new home_top_vid" autoplay="yes" playsinline="" muted="yes" loop="yes">
+        <source src="https://downloads.f1esports.com/Videos/Challengers_22_Intro.mp4" type="video/mp4">
+        <source src="" type="video/ogg">
+      </video>
+        -->
     </header>
 
     <main>
@@ -96,106 +110,78 @@
       <div class="calendario">
         <h2>Calendario</h2>
         <div class="botoes-calendario">
-          <button>Diamante</button>
-          <button>Ouro</button>
-          <button>Prata</button>
-          <button>Bronze</button>
-          <button>F 2</button>
+          <button
+            type="button"
+            onclick="alert('ola mundo')"
+            id="botao-diamante"
+          >
+            <a href="#">Diamante</a>
+          </button>
+          <button id="botao-ouro"><a href="#">Ouro</a></button>
+          <button id="botao-prata"><a href="#">Prata</a></button>
+          <button id="botao-bronze"><a href="#">Bronze</a></button>
+          <button id="botao-f2"><a href="#">F 2</a></button>
         </div>
 
         <div class="cards-calendario">
-          <ul>
+          <ul class="slider">
             <li>
               <h3>CORRIDA</h3>
-              <p>1</p>
+              <p class="num-corrida">1</p>
               <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
             </li>
 
             <li>
               <h3>CORRIDA</h3>
-              <p>1</p>
+              <p class="num-corrida">2</p>
               <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
             </li>
 
             <li>
               <h3>CORRIDA</h3>
-              <p>1</p>
+              <p class="num-corrida">3</p>
               <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
             </li>
 
             <li>
               <h3>CORRIDA</h3>
-              <p>1</p>
+              <p class="num-corrida">4</p>
               <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
             </li>
 
             <li>
               <h3>CORRIDA</h3>
-              <p>1</p>
+              <p class="num-corrida">5</p>
               <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
-            </li>
-            <li>
-              <h3>CORRIDA</h3>
-              <p>1</p>
-              <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
-            </li>
-            <li>
-              <h3>CORRIDA</h3>
-              <p>1</p>
-              <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
-            </li>
-            <li>
-              <h3>CORRIDA</h3>
-              <p>1</p>
-              <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
-            </li>
-            <li>
-              <h3>CORRIDA</h3>
-              <p>1</p>
-              <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
-            </li>
-            <li>
-              <h3>CORRIDA</h3>
-              <p>1</p>
-              <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
-            </li>
-            <li>
-              <h3>CORRIDA</h3>
-              <p>1</p>
-              <img src="imagens/bandeira-china.svg" alt="" />
-              <p>CHINA</p>
-              <p>18 JAN 22</p>
-              <p>21:00</p>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
             </li>
           </ul>
         </div>

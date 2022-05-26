@@ -52,12 +52,11 @@
   text-decoration: none;
 }
 
-.nav-menu a:hover,
+.nav-menu li a:hover,
 .dropdown-cat:hover .dropbtn-cat {
   background-color: red;
 }
-
-.nav-menu a:hover,
+.nav-menu li a:hover,
 .dropdown-sobre:hover .dropbtn-sobre {
   background-color: red;
 }
@@ -180,6 +179,10 @@ li.dropbtn-sobre {
   width: 100%;
 }
 
+.video {
+  object-fit: fill;
+}
+
 .categorias h2 {
   font-size: 3em;
   font-weight: 700;
@@ -207,11 +210,59 @@ li.dropbtn-sobre {
   color: #ff0000;
 }
 
+.botoes-calendario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes-calendario button,
+.botoes-calendario button a {
+  background-color: #303030;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  width: 8em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.botoes-calendario button:active {
+  background-color: #ff0000;
+}
+
+#botao-diamante:hover,
+#botao-diamante:hover a {
+  background-color: #ff0000;
+}
+
+#botao-ouro:hover,
+#botao-ouro:hover a {
+  background-color: #ff0000;
+}
+
+#botao-prata:hover,
+#botao-prata:hover a {
+  background-color: #ff0000;
+}
+
+#botao-bronze:hover,
+#botao-bronze:hover a {
+  background-color: #ff0000;
+}
+
+#botao-f2:hover,
+#botao-f2:hover a {
+  background-color: #ff0000;
+}
+
 .calendario ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  width: 100%;
+  gap: 1.5em;
   padding: 0;
 }
 
@@ -220,27 +271,39 @@ li.dropbtn-sobre {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
-  width: 100%;
+  gap: 2em;
   border-right: 0.1em solid #303030;
   border-bottom: 0.1em solid #303030;
   border-bottom-right-radius: 1em 1em;
-  padding: 1em;
+  padding: 0.8em;
 }
 
-.botoes-calendario {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.calendario li h3,
+.calendario li span,
+.calendario li span p {
+  width: 100%;
 }
 
-.botoes-calendario button {
-  background-color: #303030;
-  padding: 0.5em;
-  margin: 0.5em;
-  font-size: 1em;
-  border-radius: 0.5em;
+.calendario li img {
+  width: 70%;
 }
+
+.calendario h3 {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.num-corrida {
+  font-size: 3em;
+}
+
+.calendario li span p {
+  margin-bottom: 1.8em;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
 /*
 .cards-calendario li {
   display: flex;
@@ -255,16 +318,12 @@ li.dropbtn-sobre {
   margin: 0.5em;
 }
 */
-.botoes-cal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 100%;
-}
-.botoes-cal button {
-  margin: 0;
-  padding: 1.5em;
+.botoes-cal img {
+  visibility: hidden;
+  width: 2.5em;
+  margin: 1.5em;
   border: 0;
+  cursor: pointer;
 }
 
 .botoes-redes-sociais {
