@@ -384,3 +384,9 @@ header iframe {
 .box-facebook:hover img {
   background-color: #021fb5;
 }
+
+.box-twitch:hover,
+.box-twitch:hover a,
+.box-twitch:hover img {
+  background-color: #6441a5;
+}
