@@ -163,6 +163,7 @@ header iframe {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 5em;
 }
 
 @media screen and (min-width: 820px) {
@@ -180,6 +181,7 @@ header iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 3em 0 3em;
 }
 
 .categorias li {
@@ -187,6 +189,7 @@ header iframe {
 }
 
 .categorias li img {
+  width: 100%;
 }
 
 .video {
