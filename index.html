@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="1366-styles.css" />
+    <script src="carossel.js"></script>
   </head>
 
   <body>
@@ -49,48 +57,45 @@
     </header>
 
     <main>
+      <!-- categorias antes do slider-->
       <div class="categorias">
-        <span>Categorias</span>
+        <h2>Categorias</h2>
 
-        <ul>
+        <ul class="slider">
           <li class="card-cat">
-            <img src="imagens/Logo-cat-ouro.svg" alt="" />
-            <a href="#"></a>
+            <a href="#"><img src="imagens/Logo-cat-ouro.svg" alt="" /></a>
           </li>
 
           <li class="card-cat">
-            <img src="imagens/Logo-cat-ouro.svg" alt="" />
-            <a href="#"></a>
+            <a href="#"><img src="imagens/Logo-cat-ouro.svg" alt="" /></a>
           </li>
 
           <li class="card-cat">
-            <img src="imagens/Logo-cat-ouro.svg" alt="" />
-            <a href="#"></a>
+            <a href="#"><img src="imagens/Logo-cat-ouro.svg" alt="" /></a>
           </li>
 
           <li class="card-cat">
-            <img src="imagens/Logo-cat-ouro.svg" alt="" />
-            <a href="#"></a>
+            <a href="#"><img src="imagens/Logo-cat-ouro.svg" alt="" /></a>
           </li>
 
           <li class="card-cat">
-            <img src="imagens/Logo-cat-ouro.svg" alt="" />
-            <a href="#"></a>
+            <a href="#"><img src="imagens/Logo-cat-ouro.svg" alt="" /></a>
           </li>
         </ul>
+        <div class="botoes-cat">
+          <button>
+            <img src="imagens/seta-esquerda.svg" alt="" />
+          </button>
 
-        <button>
-          <img src="imagens/seta-esquerda.svg" alt="" />
-        </button>
-
-        <button>
-          <img src="imagens/seta-direita.svg" alt="" />
-        </button>
+          <button>
+            <img src="imagens/seta-direita.svg" alt="" />
+          </button>
+        </div>
       </div>
 
-      <div class="Calendario">
-        <p>Calendario</p>
-        <div class="Botoes-calendario">
+      <div class="calendario">
+        <h2>Calendario</h2>
+        <div class="botoes-calendario">
           <button>Diamante</button>
           <button>Ouro</button>
           <button>Prata</button>
@@ -101,7 +106,7 @@
         <div class="cards-calendario">
           <ul>
             <li>
-              <p>CORRIDA</p>
+              <h3>CORRIDA</h3>
               <p>1</p>
               <img src="imagens/bandeira-china.svg" alt="" />
               <p>CHINA</p>
@@ -110,7 +115,7 @@
             </li>
 
             <li>
-              <p>CORRIDA</p>
+              <h3>CORRIDA</h3>
               <p>1</p>
               <img src="imagens/bandeira-china.svg" alt="" />
               <p>CHINA</p>
@@ -119,7 +124,7 @@
             </li>
 
             <li>
-              <p>CORRIDA</p>
+              <h3>CORRIDA</h3>
               <p>1</p>
               <img src="imagens/bandeira-china.svg" alt="" />
               <p>CHINA</p>
@@ -128,7 +133,7 @@
             </li>
 
             <li>
-              <p>CORRIDA</p>
+              <h3>CORRIDA</h3>
               <p>1</p>
               <img src="imagens/bandeira-china.svg" alt="" />
               <p>CHINA</p>
@@ -137,7 +142,55 @@
             </li>
 
             <li>
-              <p>CORRIDA</p>
+              <h3>CORRIDA</h3>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+            <li>
+              <h3>CORRIDA</h3>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+            <li>
+              <h3>CORRIDA</h3>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+            <li>
+              <h3>CORRIDA</h3>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+            <li>
+              <h3>CORRIDA</h3>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+            <li>
+              <h3>CORRIDA</h3>
+              <p>1</p>
+              <img src="imagens/bandeira-china.svg" alt="" />
+              <p>CHINA</p>
+              <p>18 JAN 22</p>
+              <p>21:00</p>
+            </li>
+            <li>
+              <h3>CORRIDA</h3>
               <p>1</p>
               <img src="imagens/bandeira-china.svg" alt="" />
               <p>CHINA</p>
@@ -145,7 +198,8 @@
               <p>21:00</p>
             </li>
           </ul>
-
+        </div>
+        <div class="botoes-cal">
           <button>
             <img src="imagens/seta-esquerda.svg" alt="" />
           </button>
@@ -154,30 +208,29 @@
             <img src="imagens/seta-direita.svg" alt="" />
           </button>
         </div>
+      </div>
+      <div class="midias-sociais">
+        <ul class="botoes-redes-sociais">
+          <li class="box-youtube">
+            <a href="#"><img src="imagens/logo-youtube.svg" alt="" /></a>
+            <img src="" alt="" />
+          </li>
 
-        <div class="midias-sociais">
-          <ul class="botoes-redes-sociais">
-            <li class="box-youtube">
-              <a href="#"><img src="imagens/logo-youtube.svg" alt="" /></a>
-              <img src="" alt="" />
-            </li>
+          <li class="box-instagram">
+            <a href="#"><img src="imagens/logo-instagram.svg" alt="" /></a>
+            <img src="" alt="" />
+          </li>
 
-            <li class="box-instagram">
-              <a href="#"><img src="imagens/logo-instagram.svg" alt="" /></a>
-              <img src="" alt="" />
-            </li>
+          <li class="box-twitter">
+            <a href="#"><img src="imagens/logo-twitter.svg" alt="" /></a>
+            <img src="" alt="" />
+          </li>
 
-            <li class="box-twitter">
-              <a href="#"><img src="imagens/logo-twitter.svg" alt="" /></a>
-              <img src="" alt="" />
-            </li>
-
-            <li class="box-facebook">
-              <a href="#"><img src="imagens/logo-facebook.svg" alt="" /></a>
-              <img src="" alt="" />
-            </li>
-          </ul>
-        </div>
+          <li class="box-facebook">
+            <a href="#"><img src="imagens/logo-facebook.svg" alt="" /></a>
+            <img src="" alt="" />
+          </li>
+        </ul>
       </div>
     </main>
 

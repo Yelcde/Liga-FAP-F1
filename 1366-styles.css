@@ -5,6 +5,9 @@
   background-color: black;
   color: white;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .nav-menu ul,
@@ -16,12 +19,12 @@
   background-color: #303030;
 }
 
-.nav-menu > ul > li {
+.nav-menu li {
   float: left;
 }
 
 .nav-menu.li,
-.nav-menu.a,
+.nav-menu a,
 .dropbtn-cat {
   display: inline-block;
   color: white;
@@ -39,7 +42,7 @@
 }
 
 .nav-menu.li,
-.nav-menu.a,
+.nav-menu a,
 .dropbtn-sobre {
   display: inline-block;
   background-color: #303030;
@@ -49,12 +52,12 @@
   text-decoration: none;
 }
 
-li a:hover,
+.nav-menu a:hover,
 .dropdown-cat:hover .dropbtn-cat {
   background-color: red;
 }
 
-li a:hover,
+.nav-menu a:hover,
 .dropdown-sobre:hover .dropbtn-sobre {
   background-color: red;
 }
@@ -126,17 +129,12 @@ li.dropbtn-sobre {
 }
 
 .user-icon a {
-  margin: 0;
-  padding: 0;
-}
-
-.user-icon > a {
   background-color: #303030;
   margin: 0;
   padding: 0;
 }
 
-.user-icon > a > img {
+.user-icon img {
   background-color: #ff0000;
 }
 
@@ -156,31 +154,114 @@ li.dropbtn-sobre {
   padding: 0%;
 }
 */
-.nav-menu > a {
+.nav-menu a {
   background-color: #303030;
 }
 
 .categorias {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 4.5em;
+  flex-direction: column;
+  row-gap: 4.5em;
+  margin-bottom: 5em;
 }
-.categorias > ul {
+.categorias ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorias li {
+  margin: 2em;
+}
+
+.categorias li img {
+  width: 100%;
+}
+
+.categorias h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #ff0000;
+}
+.botoes-cat img {
+  visibility: hidden;
+  width: 2.5em;
+  margin: 1.5em;
+  border: 0;
+  cursor: pointer;
+}
+
+.calendario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 4.5em;
+}
+
+.calendario h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #ff0000;
+}
+
+.calendario ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+}
+
+.calendario li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  border-right: 0.1em solid #303030;
+  border-bottom: 0.1em solid #303030;
+  border-bottom-right-radius: 1em 1em;
+  padding: 1em;
+}
+
+.botoes-calendario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes-calendario button {
+  background-color: #303030;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1em;
+  border-radius: 0.5em;
+}
+/*
+.cards-calendario li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  border-right: 0.1em solid #303030;
+  border-bottom: 0.1em solid #303030;
+  border-bottom-right-radius: 1em 1em;
+  padding: 2em;
+  margin: 0.5em;
+}
+*/
+.botoes-cal {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-basis: 100%;
 }
-
-.categorias > span {
-  font-size: 3em;
-  font-weight: 700;
-  color: #ff0000;
-  flex-basis: 100%;
-}
-button {
+.botoes-cal button {
   margin: 0;
   padding: 1.5em;
   border: 0;
@@ -191,9 +272,10 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-basis: 100%;
 }
 
-.botoes-redes-sociais > li {
+.botoes-redes-sociais li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,31 +284,31 @@ button {
   background-color: #303030;
 }
 
-.botoes-redes-sociais > li > a,
-.botoes-redes-sociais > li > a > img {
+.botoes-redes-sociais a,
+.botoes-redes-sociais img {
   background-color: #303030;
 }
 
 .box-youtube:hover,
-.box-youtube:hover > a,
-.box-youtube:hover > a > img {
+.box-youtube:hover a,
+.box-youtube:hover img {
   background-color: #ff0000;
 }
 
 .box-instagram:hover,
-.box-instagram:hover > a,
-.box-instagram:hover > a > img {
+.box-instagram:hover a,
+.box-instagram:hover img {
   background-color: #c0007a;
 }
 
 .box-twitter:hover,
-.box-twitter:hover > a,
-.box-twitter:hover > a > img {
+.box-twitter:hover a,
+.box-twitter:hover img {
   background-color: #029abc;
 }
 
 .box-facebook:hover,
-.box-facebook:hover > a,
-.box-facebook:hover > a > img {
+.box-facebook:hover a,
+.box-facebook:hover img {
   background-color: #021fb5;
 }
