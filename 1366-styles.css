@@ -97,13 +97,15 @@ alinha a esquerda os itens do dropdown menu*/
 }
 
 /*ajustes finos no h3 do nav-menu e logo*/
+.nav-menu > a,
 .nav-menu h3,
 .nav-menu img {
-  font-size: 2em;
+  font-size: 1.4em;
   background-color: #303030;
   color: #ff0000;
   text-align: center;
   margin: 0 0 0 0;
+  padding: 0;
 }
 
 /*ajustes no icone de usuário do nav-menu*/
