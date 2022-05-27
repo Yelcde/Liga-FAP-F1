@@ -3,44 +3,21 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
   background-color: black;
-  color: white;
+  color: #c4c4c4;
   text-decoration: none;
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-.nav-menu ul,
-.nav-menu li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #303030;
-}
+/*HEAD
 
+alinha a esquerda os itens do dropdown menu*/
 .nav-menu li {
   float: left;
 }
 
-.nav-menu.li,
-.nav-menu a,
-.dropbtn-cat {
-  display: inline-block;
-  color: white;
-  background-color: #303030;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.novidades a {
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  background-color: #303030;
-}
-
+/*organiza os botoes do dropdown menu*/
 .nav-menu.li,
 .nav-menu a,
 .dropbtn-sobre {
@@ -52,6 +29,7 @@
   text-decoration: none;
 }
 
+/*muda a cor para vermelho dos elementos do menu dropdown*/
 .nav-menu li a:hover,
 .dropdown-cat:hover .dropbtn-cat {
   background-color: red;
@@ -61,14 +39,7 @@
   background-color: red;
 }
 
-li.dropdown-cat {
-  display: inline-block;
-}
-
-li.dropbtn-sobre {
-  display: inline-block;
-}
-
+/* deixa opções do dropdown de categorias sem serem mostradas*/
 .dropdown-content-cat {
   display: none;
   position: absolute;
@@ -76,6 +47,8 @@ li.dropbtn-sobre {
   min-width: 100px;
   z-index: 1;
 }
+
+/* deixa opções do dropdown de sobre sem serem mostradas*/
 .dropdown-content-sobre {
   display: none;
   position: absolute;
@@ -84,6 +57,7 @@ li.dropbtn-sobre {
   z-index: 1;
 }
 
+/*alinha os elementos do dropdown de categorias em forma de coluna*/
 .dropdown-content-cat a {
   color: #c4c4c4;
   background-color: #303030;
@@ -93,6 +67,7 @@ li.dropbtn-sobre {
   text-align: left;
 }
 
+/*alinha os elementos do dropdown de sobre em forma de coluna*/
 .dropdown-content-sobre a {
   color: #c4c4c4;
   background-color: #303030;
@@ -102,14 +77,17 @@ li.dropbtn-sobre {
   text-align: left;
 }
 
+/*faz o conteudo de dropdown de categorias aparecer*/
 .dropdown-cat:hover .dropdown-content-cat {
   display: block;
 }
 
+/*faz o conteudo de dropdown de sobre aparecer*/
 .dropdown-sobre:hover .dropdown-content-sobre {
   display: block;
 }
 
+/*transforma o nav-menu em flex e ajusta posição dos elementos do mesmo*/
 .nav-menu {
   display: flex;
   align-items: center;
@@ -118,6 +96,7 @@ li.dropbtn-sobre {
   color: #c4c4c4;
 }
 
+/*ajustes finos no h3 do nav-menu e logo*/
 .nav-menu h3,
 .nav-menu img {
   font-size: 2em;
@@ -127,16 +106,15 @@ li.dropbtn-sobre {
   margin: 0 0 0 0;
 }
 
+/*ajustes no icone de usuário do nav-menu*/
 .user-icon a {
   background-color: #303030;
   margin: 0;
   padding: 0;
 }
-
 .user-icon img {
   background-color: #ff0000;
 }
-
 .nav-menu h3 {
   margin: 0 0 0 1em;
 }
@@ -389,4 +367,37 @@ header iframe {
 .box-twitch:hover a,
 .box-twitch:hover img {
   background-color: #6441a5;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+
+  flex-direction: column;
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #ff0000;
+}
+
+.patrocinadores li {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.patrocinadores img {
+  padding: 0.5em;
+}
+
+#copyright {
+  background-color: #303030;
+  color: #c4c4c4;
+  margin-top: 0.5em;
+  width: 100%;
 }
