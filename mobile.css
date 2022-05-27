@@ -25,24 +25,6 @@
 
 .nav-menu.li,
 .nav-menu a,
-.dropbtn-cat {
-  display: inline-block;
-  color: white;
-  background-color: #303030;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.novidades a {
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  background-color: #303030;
-}
-
-.nav-menu.li,
-.nav-menu a,
 .dropbtn-sobre {
   display: inline-block;
   background-color: #303030;
@@ -56,6 +38,7 @@
 .dropdown-cat:hover .dropbtn-cat {
   background-color: red;
 }
+
 .nav-menu li a:hover,
 .dropdown-sobre:hover .dropbtn-sobre {
   background-color: red;
@@ -76,6 +59,7 @@ li.dropbtn-sobre {
   min-width: 100px;
   z-index: 1;
 }
+
 .dropdown-content-sobre {
   display: none;
   position: absolute;
@@ -140,19 +124,7 @@ li.dropbtn-sobre {
 .nav-menu h3 {
   margin: 0 0 0 1em;
 }
-/*
-.nav-menu > ul,
-.nav-menu > li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  background-color: #303030;
-  margin: 0 0 0 0;
-  padding: 0%;
-}
-*/
+
 .nav-menu a {
   background-color: #303030;
 }
@@ -315,20 +287,6 @@ header iframe {
   font-size: 1.2em;
 }
 
-/*
-.cards-calendario li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 100%;
-  border-right: 0.1em solid #303030;
-  border-bottom: 0.1em solid #303030;
-  border-bottom-right-radius: 1em 1em;
-  padding: 2em;
-  margin: 0.5em;
-}
-*/
 .botoes-cal img {
   visibility: hidden;
   width: 2.5em;
@@ -343,7 +301,7 @@ header iframe {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 0.1em;
+  row-gap: 0.2em;
   flex-basis: 100%;
 }
 
@@ -383,4 +341,44 @@ header iframe {
 .box-facebook:hover a,
 .box-facebook:hover img {
   background-color: #021fb5;
+}
+
+.box-twitch:hover,
+.box-twitch:hover a,
+.box-twitch:hover img {
+  background-color: #6441a5;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+
+  flex-direction: column;
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #ff0000;
+}
+
+.patrocinadores li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.patrocinadores img {
+  padding: 0.5em;
+}
+
+#copyright {
+  background-color: #303030;
+  color: #c4c4c4;
+  margin-top: 0.5em;
+  width: 100%;
 }

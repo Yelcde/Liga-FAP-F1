@@ -118,19 +118,7 @@ alinha a esquerda os itens do dropdown menu*/
 .nav-menu h3 {
   margin: 0 0 0 1em;
 }
-/*
-.nav-menu > ul,
-.nav-menu > li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  background-color: #303030;
-  margin: 0 0 0 0;
-  padding: 0%;
-}
-*/
+
 .nav-menu a {
   background-color: #303030;
 }
@@ -168,10 +156,6 @@ header iframe {
 
 .categorias li img {
   width: 100%;
-}
-
-.video {
-  object-fit: fill;
 }
 
 .categorias h2 {
@@ -295,20 +279,6 @@ header iframe {
   font-size: 1.2em;
 }
 
-/*
-.cards-calendario li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 100%;
-  border-right: 0.1em solid #303030;
-  border-bottom: 0.1em solid #303030;
-  border-bottom-right-radius: 1em 1em;
-  padding: 2em;
-  margin: 0.5em;
-}
-*/
 .botoes-cal img {
   visibility: hidden;
   width: 2.5em;
