@@ -239,6 +239,8 @@ header iframe {
   background-color: #ff0000;
 }
 
+
+
 .calendario ul {
   display: flex;
   align-items: center;
@@ -381,4 +383,8 @@ footer h4 {
   color: #c4c4c4;
   margin-top: 0.5em;
   width: 100%;
+}
+
+.cards-diamante{
+  flex-direction: column;
 }

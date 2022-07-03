@@ -26,24 +26,27 @@
       media="screen and (max-width: 820px)"
       href="mobile.css"
     />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <script src="carossel.js"></script>
   </head>
 
   <body>
     <nav>
       <div class="nav-menu">
-        <a href="index.html"
-          ><h3>FAP <img id="logo-f1" src="imagens/Logo-F1.svg" alt="" /></h3
+        <a href="index.html" class="item-nav"
+          ><h3 id="logo-fap">FAP <img id="logo-f1" src="imagens/Logo-F1.svg" alt="" /></h3
         ></a>
-        <ul>
+        <ul class="p-0 m-0 item-nav">
           <li class="dropdown-cat">
             <a href="javascript:void(0)" class="dropbtn-cat">Categorias</a>
             <div class="dropdown-content-cat">
-              <a href="diamante.html">Diamante</a>
-              <a href="ouro.html">Ouro</a>
-              <a href="prata.html">Prata</a>
-              <a href="bronze.html">Bronze</a>
-              <a href="f2.html">F 2</a>
+              <a href="tabelas.html">Diamante</a>
+              <a href="tabelas.html">Ouro</a>
+              <a href="tabelas.html">Prata</a>
+              <a href="tabelas.html">Bronze</a>
+              <a href="tabelas.html">F 2</a>
             </div>
           </li>
           <li class="novidades"><a href="#">Novidades</a></li>
@@ -55,30 +58,31 @@
             </div>
           </li>
         </ul>
-        <div class="user-icon">
+        <div class="user-icon dropdown-center item-nav">
+          <button class="pe-4 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="user-icon" src="imagens/User-Icon.svg" alt=""/>
+          </button>
+          <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
+            <li ><a class="dropdown-item p-2" href="login.html">Login</a></li>
+            <li><a class="dropdown-item p-2" href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+          <!--
           <a href="user-page.html"
             ><img id="user-icon" src="imagens/User-Icon.svg" alt=""
           /></a>
+          -->
         </div>
       </div>
     </nav>
 
     <header>
-      <iframe
-        width="1536"
-        height="562"
-        src="https://www.youtube.com/embed/zxdRgKso69Q"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <!--
+    
+      
       <video id="f1esports-video" class="video-bg-new home_top_vid" autoplay="yes" playsinline="" muted="yes" loop="yes">
         <source src="https://downloads.f1esports.com/Videos/Challengers_22_Intro.mp4" type="video/mp4">
         <source src="" type="video/ogg">
       </video>
-        -->
+      
     </header>
 
     <main>
@@ -88,31 +92,31 @@
 
         <ul class="slider">
           <li class="card-cat">
-            <a href="diamante.html"
+            <a href="tabelas.html"
+              ><img src="imagens/Logo-cat-diamante.svg" alt=""
+            /></a>
+          </li>
+
+          <li class="card-cat">
+            <a href="tabelas.html"
               ><img src="imagens/Logo-cat-ouro.svg" alt=""
             /></a>
           </li>
 
           <li class="card-cat">
-            <a href="ouro.html"
-              ><img src="imagens/Logo-cat-ouro.svg" alt=""
+            <a href="tabelas.html"
+              ><img src="imagens/Logo-cat-prata.svg" alt=""
             /></a>
           </li>
 
           <li class="card-cat">
-            <a href="prata.html"
-              ><img src="imagens/Logo-cat-ouro.svg" alt=""
+            <a href="tabelas.html"
+              ><img src="imagens/Logo-cat-bronze.svg" alt=""
             /></a>
           </li>
 
           <li class="card-cat">
-            <a href="bronze.html"
-              ><img src="imagens/Logo-cat-ouro.svg" alt=""
-            /></a>
-          </li>
-
-          <li class="card-cat">
-            <a href="f2.html"><img src="imagens/Logo-cat-ouro.svg" alt="" /></a>
+            <a href="tabelas.html"><img src="imagens/Logo-cat-f2.svg" alt="" /></a>
           </li>
         </ul>
         <div class="botoes-cat">
@@ -126,6 +130,337 @@
         </div>
       </div>
 
+
+      <ul class="nav nav-pills  mb-4 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-diamante-tab" data-bs-toggle="pill" data-bs-target="#pills-diamante" type="button" role="tab" aria-controls="pills-diamante" aria-selected="true">Diamante</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-ouro-tab" data-bs-toggle="pill" data-bs-target="#pills-ouro" type="button" role="tab" aria-controls="pills-ouro" aria-selected="false">Ouro</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-prata-tab" data-bs-toggle="pill" data-bs-target="#pills-prata" type="button" role="tab" aria-controls="pills-prata" aria-selected="false">Prata</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-bronze-tab" data-bs-toggle="pill" data-bs-target="#pills-bronze" type="button" role="tab" aria-controls="pills-bronze" aria-selected="false">Bronze</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-f2-tab" data-bs-toggle="pill" data-bs-target="#pills-f2" type="button" role="tab" aria-controls="pills-f2" aria-selected="false">F2</button>
+        </li>
+      </ul>
+      <div class="tab-content pb-5" id="pills-tabContent">
+        <div class="tab-pane fade show active " id="pills-diamante" role="tabpanel" aria-labelledby="pills-diamante-tab" tabindex="0">
+          <ul class="cards-diamante mb-0 p-0 d-flex justify-content-center ">
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">1</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4" >
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">2</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">3</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">4</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">5</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span >
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-ouro" role="tabpanel" aria-labelledby="pills-ouro-tab" tabindex="0">
+          <ul class="cards-ouro m-0 p-0 d-flex justify-content-center ">
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">1</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4" >
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">2</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">3</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">4</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">5</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span >
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-prata" role="tabpanel" aria-labelledby="pills-prata-tab" tabindex="0">
+          <ul class="cards-prata mb-0 p-0 d-flex justify-content-center ">
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">1</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4" >
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">2</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">3</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">4</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">5</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span >
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-bronze" role="tabpanel" aria-labelledby="pills-bronze-tab" tabindex="0">
+          <ul class="cards-bronze mb-0 p-0 d-flex justify-content-center ">
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">1</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4" >
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">2</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">3</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">4</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">5</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span >
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-f2" role="tabpanel" aria-labelledby="pills-f2-tab" tabindex="0">
+          <ul class="cards-f2 mb-0 p-0 d-flex justify-content-center ">
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">1</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4" >
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">2</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">3</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5"/>
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4 ">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">4</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span>
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+
+            <li class="cards m-4">
+              <h3 class="m-4">CORRIDA</h3>
+              <p class="num-corrida">5</p>
+              <img src="imagens/bandeira-china.svg" alt="" class="mb-5 mt-5" />
+
+              <span >
+                <p>CHINA</p>
+                <p>18 JAN 22</p>
+                <p>21:00</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Calendário antigo sem bootstrap
       <div class="calendario">
         <h2>Calendario</h2>
         <div class="botoes-calendario">
@@ -208,9 +543,10 @@
           </button>
         </div>
       </div>
+    -->
     </main>
-
-    <footer>
+    
+    <footer class="pt-5">
       <h4>Apoio:</h4>
 
       <ul class="patrocinadores">
@@ -250,5 +586,6 @@
 
       <p id="copyright" class="text-center">&copy; 2022 | Pablo Estrela</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

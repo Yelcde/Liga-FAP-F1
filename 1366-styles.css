@@ -2,7 +2,7 @@
   text-align: center;
   list-style: none;
   font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  background-color: #303030;
   color: #c4c4c4;
   text-decoration: none;
   padding: 0;
@@ -10,11 +10,37 @@
   border: 0;
 }
 
+
+
 /*HEAD
+
 
 alinha a esquerda os itens do dropdown menu*/
 .nav-menu li {
   float: left;
+}
+
+/*determina o largura de cada elemento do nav menu*/
+.item-nav{
+  width: 30%;
+}
+
+/* alinha nav-dropdown no fim da tela*/
+div.user-icon.dropdown-center.item-nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* alinha nav-dropdown no inicio da tela*/
+#logo-fap{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* alinha nav-dropdown no centro da tela*/
+ul.p-0.m-0.item-nav{
+  display: flex;
+  justify-content: center;
 }
 
 /*organiza os botoes do dropdown menu*/
@@ -33,10 +59,12 @@ alinha a esquerda os itens do dropdown menu*/
 .nav-menu li a:hover,
 .dropdown-cat:hover .dropbtn-cat {
   background-color: red;
+  color: white;
 }
 .nav-menu li a:hover,
 .dropdown-sobre:hover .dropbtn-sobre {
   background-color: red;
+  color: white;
 }
 
 /* deixa opções do dropdown de categorias sem serem mostradas*/
@@ -125,14 +153,29 @@ alinha a esquerda os itens do dropdown menu*/
   background-color: #303030;
 }
 
-header,
-header iframe {
+header{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 5em;
+  
+  
+  
+  
 }
+
+header video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  margin-bottom: 10em;
+  
+}
+
+
+header iframe{
+  background-color: #303030;
+} 
 
 @media screen and (min-width: 820px) {
 }
@@ -173,120 +216,53 @@ header iframe {
   cursor: pointer;
 }
 
-.calendario {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 4.5em;
+.cards{
+  border-right: 0.1em solid #c4c4c4;
+  border-bottom: 0.1em solid #c4c4c4;
+  border-bottom-right-radius: 1em 1em;
 }
 
-.calendario h2 {
+.cards > p{
   font-size: 3em;
-  font-weight: 700;
-  color: #ff0000;
 }
 
-.botoes-calendario {
+.nav-item{
+  width: 10%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin: 0 1em;
 }
 
-.botoes-calendario button,
-.botoes-calendario button a {
-  background-color: #303030;
-  padding: 0.5em;
-  margin: 0.5em;
-  font-size: 1em;
-  border-radius: 0.5em;
-  width: 8em;
-  text-align: center;
-  cursor: pointer;
-}
-
-.botoes-calendario button:active {
-  background-color: #ff0000;
-}
-
-#botao-diamante:hover,
-#botao-diamante:hover a {
-  background-color: #ff0000;
-}
-
-#botao-ouro:hover,
-#botao-ouro:hover a {
-  background-color: #ff0000;
-}
-
-#botao-prata:hover,
-#botao-prata:hover a {
-  background-color: #ff0000;
-}
-
-#botao-bronze:hover,
-#botao-bronze:hover a {
-  background-color: #ff0000;
-}
-
-#botao-f2:hover,
-#botao-f2:hover a {
-  background-color: #ff0000;
-}
-
-.calendario ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav-link{
   width: 100%;
-  gap: 1.5em;
+  font-size: 1em;
+  text-align: center;
+}
+
+#pills-tab .nav-link[aria-selected="true"]{
+  background-color: #ff0000;
   padding: 0;
 }
 
-.calendario li {
+.nav-item .nav-link[aria-selected="false"]{
+  color: #f9f9f9;
+  background-color: #303030;
+}
+
+.nav-item .nav-link[aria-selected="false"]:hover{
+  color: #f9f9f9;
+  background-color: #ff0000;
+}
+
+ul.dropdown-menu.p-0.show{
+  background-color: #303030;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  border-right: 0.1em solid #303030;
-  border-bottom: 0.1em solid #303030;
-  border-bottom-right-radius: 1em 1em;
-  padding: 0.8em;
 }
 
-.calendario li h3,
-.calendario li span,
-.calendario li span p {
-  width: 100%;
-}
-
-.calendario li img {
-  width: 70%;
-}
-
-.calendario h3 {
-  color: #ff0000;
-  font-weight: 700;
-  font-size: 1.8em;
-}
-
-.num-corrida {
-  font-size: 3em;
-}
-
-.calendario li span p {
-  margin-bottom: 1.8em;
-  font-weight: 700;
-  font-size: 1.2em;
-}
-
-.botoes-cal img {
-  visibility: hidden;
-  width: 2.5em;
-  margin: 1.5em;
-  border: 0;
-  cursor: pointer;
+.patrocinadores{
+  margin: 1em 0;
+  padding: 0;
 }
 
 .botoes-redes-sociais {
@@ -295,13 +271,15 @@ header iframe {
   align-items: center;
   justify-content: center;
   flex-basis: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .botoes-redes-sociais li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5em 1em 0.4em 1em;
+  padding: 1em 1em 1em 1em;
   margin: 0 0.05em;
   background-color: #303030;
 }
@@ -311,43 +289,100 @@ header iframe {
   background-color: #303030;
 }
 
-.box-youtube:hover,
-.box-youtube:hover a,
-.box-youtube:hover img {
-  background-color: #ff0000;
+
+.box-twitch,
+.box-facebook,
+.box-twitter,
+.box-instagram,
+.box-youtube{
+  border-radius: 50%;
+  transform: scale(0.8);
 }
 
-.box-instagram:hover,
-.box-instagram:hover a,
-.box-instagram:hover img {
-  background-color: #c0007a;
+.box-twitch,
+.box-twitch img,
+.box-facebook,
+.box-facebook img,
+.box-twitter,
+.box-twitter img,
+.box-instagram,
+.box-instagram img,
+.box-youtube,
+.box-youtube img 
+{
+  -webkit-transition: all 0.5s ease;
 }
 
-.box-twitter:hover,
-.box-twitter:hover a,
-.box-twitter:hover img {
-  background-color: #029abc;
-}
-
-.box-facebook:hover,
-.box-facebook:hover a,
-.box-facebook:hover img {
-  background-color: #021fb5;
+.box-twitch a,
+.box-youtube a,
+.box-instagram a,
+.box-twitter a,
+.box-facebook a
+{
+  transform: scale(0.7);
+  border-radius: 50%;
 }
 
 .box-twitch:hover,
-.box-twitch:hover a,
-.box-twitch:hover img {
+.box-twitch:hover img 
+{
   background-color: #6441a5;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+   
 }
+
+.box-twitter:hover,
+.box-twitter:hover img 
+{
+  background-color: #029abc;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+   
+}
+
+.box-youtube:hover,
+.box-youtube:hover img 
+{
+  background-color: #ff0000;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+   
+}
+
+.box-facebook:hover,
+.box-facebook:hover img 
+{
+  background-color: #021fb5;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+   
+}
+
+.box-instagram:hover,
+.box-instagram:hover img 
+{
+  background-color: #c0007a;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+   
+}
+
+
+
+/* .box-twitch:hover{
+  transform: scale(1.2);
+  transition-duration: 1s 
+}   */
+
+
+
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
-  margin-top: 2em;
-
   flex-direction: column;
 }
 
@@ -372,4 +407,8 @@ footer h4 {
   color: #c4c4c4;
   margin-top: 0.5em;
   width: 100%;
+}
+
+div.teste{
+  width: 80%;
 }
