@@ -40,7 +40,6 @@ alinha a esquerda os itens do dropdown menu*/
 .item-nav {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   width: 30%;
 }
 
