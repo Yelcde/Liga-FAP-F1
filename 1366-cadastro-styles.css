@@ -1,0 +1,408 @@
+* {
+  text-align: center;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+main,
+footer {
+  background-color: #303030;
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+#dropdownMenuButton1 {
+  background-color: #151515;
+  color: white;
+}
+
+
+/*HEADER
+  
+  
+  alinha a esquerda os itens do dropdown menu*/
+.nav-menu {
+  background-color: #151515;
+}
+
+.nav-menu li {
+  float: left;
+}
+
+/*determina o largura de cada elemento do nav menu*/
+.item-nav {
+  display: flex;
+  justify-content: center;
+
+  width: 30%;
+}
+
+/* alinha nav-dropdown no fim da tela*/
+div.user-icon.dropdown-center.item-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* alinha nav-dropdown no inicio da tela*/
+#logo-fap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* alinha nav-dropdown no centro da tela*/
+ul.p-0.m-0.item-nav {
+  display: flex;
+  justify-content: center;
+}
+
+/*organiza os botoes do dropdown menu*/
+.nav-menu.li,
+.nav-menu a,
+.dropbtn-sobre {
+  display: inline-block;
+  background-color: #151515;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*muda a cor para vermelho dos elementos do menu dropdown*/
+.nav-menu li a:hover,
+.dropdown-cat:hover .dropbtn-cat {
+  background-color: red;
+  color: white;
+}
+
+.nav-menu li a:hover,
+.dropdown-sobre:hover .dropbtn-sobre {
+  background-color: red;
+  color: white;
+}
+
+/* deixa opções do dropdown de categorias sem serem mostradas*/
+.dropdown-content-cat {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  z-index: 1;
+}
+
+/* deixa opções do dropdown de sobre sem serem mostradas*/
+.dropdown-content-sobre {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  z-index: 1;
+}
+
+/*alinha os elementos do dropdown de categorias em forma de coluna*/
+.dropdown-content-cat a {
+  color: #c4c4c4;
+  /* background-color: #303030; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*alinha os elementos do dropdown de sobre em forma de coluna*/
+.dropdown-content-sobre a {
+  color: #c4c4c4;
+  /* background-color: #303030; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*faz o conteudo de dropdown de categorias aparecer*/
+.dropdown-cat:hover .dropdown-content-cat {
+  display: block;
+}
+
+/*faz o conteudo de dropdown de sobre aparecer*/
+.dropdown-sobre:hover .dropdown-content-sobre {
+  display: block;
+}
+
+/*transforma o nav-menu em flex e ajusta posição dos elementos do mesmo*/
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #303030; */
+  color: #c4c4c4;
+}
+
+/*ajustes finos no h3 do nav-menu e logo*/
+.nav-menu>a,
+.nav-menu h3,
+.nav-menu img {
+  font-size: 1.4em;
+  /* background-color: #303030; */
+  color: #ff0000;
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+/*ajustes no icone de usuário do nav-menu*/
+.user-icon a {
+  /* background-color: #303030; */
+  margin: 0;
+  padding: 0;
+}
+
+.user-icon img {
+  background-color: #ff0000;
+}
+
+.nav-menu h3 {
+  margin: 0 0 0 1em;
+}
+
+/* .nav-menu a {
+    background-color: #303030;
+  } */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  margin-bottom: 10em;
+
+}
+
+
+header iframe {
+  background-color: #303030;
+}
+
+
+.nav-menu {
+  background-color: #151515;
+}
+
+.cards {
+  border-right: 0.1em solid #c4c4c4;
+  border-bottom: 0.1em solid #c4c4c4;
+  border-bottom-right-radius: 1em 1em;
+}
+
+.cards>p {
+  font-size: 3em;
+}
+
+.nav-item {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  margin: 0 1em;
+}
+
+.nav-link {
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+}
+
+#pills-tab .nav-link[aria-selected="true"] {
+  background-color: #ff0000;
+  padding: 0;
+}
+
+.nav-item .nav-link[aria-selected="false"] {
+  color: #f9f9f9;
+  background-color: #303030;
+}
+
+.nav-item .nav-link[aria-selected="false"]:hover {
+  color: #f9f9f9;
+  background-color: #ff0000;
+}
+
+ul.dropdown-menu.p-0.show {
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  margin-top: 2em;
+
+}
+
+input,
+select {
+  box-shadow: 0 0 0 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.option-categoria:hover {
+  background-color: #ff0000 !important;
+  color: white !important;
+}
+
+.categorias .dropdown {
+  width: 100% !important;
+}
+
+input.btn.btn-danger {
+  background-color: #ff0000;
+}
+
+.patrocinadores {
+  margin: 1em 0;
+  padding: 0;
+}
+
+.botoes-redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.botoes-redes-sociais li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1em 1em 1em;
+  margin: 0 0.05em;
+  background-color: #303030;
+}
+
+.botoes-redes-sociais a,
+.botoes-redes-sociais img {
+  background-color: #303030;
+}
+
+
+.box-twitch,
+.box-facebook,
+.box-twitter,
+.box-instagram,
+.box-youtube {
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+
+.box-twitch,
+.box-twitch img,
+.box-facebook,
+.box-facebook img,
+.box-twitter,
+.box-twitter img,
+.box-instagram,
+.box-instagram img,
+.box-youtube,
+.box-youtube img {
+  transition: all 0.5s ease;
+}
+
+.box-twitch a,
+.box-youtube a,
+.box-instagram a,
+.box-twitter a,
+.box-facebook a {
+  transform: scale(0.7);
+  border-radius: 50%;
+}
+
+.box-twitch:hover,
+.box-twitch:hover img {
+  background-color: #6441a5;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+
+}
+
+.box-twitter:hover,
+.box-twitter:hover img {
+  background-color: #029abc;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+
+}
+
+.box-youtube:hover,
+.box-youtube:hover img {
+  background-color: #ff0000;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+
+}
+
+.box-facebook:hover,
+.box-facebook:hover img {
+  background-color: #021fb5;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+
+}
+
+.box-instagram:hover,
+.box-instagram:hover img {
+  background-color: #c0007a;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+
+}
+
+
+
+/* .box-twitch:hover{
+    transform: scale(1.2);
+    transition-duration: 1s 
+  }   */
+
+
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-direction: column;
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #ff0000;
+}
+
+.patrocinadores li {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.patrocinadores img {
+  padding: 0.5em;
+}
+
+#copyright {
+  background-color: #303030;
+  color: #c4c4c4;
+  margin-top: 0.5em;
+  width: 100%;
+}

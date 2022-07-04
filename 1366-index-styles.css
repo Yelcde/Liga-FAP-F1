@@ -2,17 +2,33 @@
   text-align: center;
   list-style: none;
   font-family: 'Montserrat', sans-serif;
-  background-color: #303030;
-  color: #c4c4c4;
-  text-decoration: none;
   padding: 0;
   margin: 0;
   border: 0;
 }
 
+main,
+footer {
+  background-color: #303030;
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+#dropdownMenuButton1 {
+  background-color: #151515;
+  color: white;
+}
 
 
-/*HEAD
+/*HEADER
+
+
+alinha a esquerda os itens do dropdown menu*/
+.nav-menu {
+  background-color: #151515;
+}
+
+/*HEADER
 
 
 alinha a esquerda os itens do dropdown menu*/
@@ -21,24 +37,27 @@ alinha a esquerda os itens do dropdown menu*/
 }
 
 /*determina o largura de cada elemento do nav menu*/
-.item-nav{
+.item-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 30%;
 }
 
 /* alinha nav-dropdown no fim da tela*/
-div.user-icon.dropdown-center.item-nav{
+div.user-icon.dropdown-center.item-nav {
   display: flex;
   justify-content: flex-end;
 }
 
 /* alinha nav-dropdown no inicio da tela*/
-#logo-fap{
+#logo-fap {
   display: flex;
   justify-content: flex-start;
 }
 
 /* alinha nav-dropdown no centro da tela*/
-ul.p-0.m-0.item-nav{
+ul.p-0.m-0.item-nav {
   display: flex;
   justify-content: center;
 }
@@ -48,7 +67,7 @@ ul.p-0.m-0.item-nav{
 .nav-menu a,
 .dropbtn-sobre {
   display: inline-block;
-  background-color: #303030;
+  /* background-color: #303030; */
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -61,6 +80,7 @@ ul.p-0.m-0.item-nav{
   background-color: red;
   color: white;
 }
+
 .nav-menu li a:hover,
 .dropdown-sobre:hover .dropbtn-sobre {
   background-color: red;
@@ -88,7 +108,7 @@ ul.p-0.m-0.item-nav{
 /*alinha os elementos do dropdown de categorias em forma de coluna*/
 .dropdown-content-cat a {
   color: #c4c4c4;
-  background-color: #303030;
+  background-color: #151515;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -98,7 +118,7 @@ ul.p-0.m-0.item-nav{
 /*alinha os elementos do dropdown de sobre em forma de coluna*/
 .dropdown-content-sobre a {
   color: #c4c4c4;
-  background-color: #303030;
+  background-color: #151515;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -120,16 +140,16 @@ ul.p-0.m-0.item-nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #303030;
+  /* background-color: #303030; */
   color: #c4c4c4;
 }
 
 /*ajustes finos no h3 do nav-menu e logo*/
-.nav-menu > a,
+.nav-menu>a,
 .nav-menu h3,
 .nav-menu img {
   font-size: 1.4em;
-  background-color: #303030;
+  /* background-color: #303030; */
   color: #ff0000;
   text-align: center;
   margin: 0 0 0 0;
@@ -138,29 +158,31 @@ ul.p-0.m-0.item-nav{
 
 /*ajustes no icone de usuário do nav-menu*/
 .user-icon a {
-  background-color: #303030;
+  /* background-color: #303030; */
   margin: 0;
   padding: 0;
 }
+
 .user-icon img {
   background-color: #ff0000;
 }
+
 .nav-menu h3 {
   margin: 0 0 0 1em;
 }
 
 .nav-menu a {
-  background-color: #303030;
+  /* background-color: #303030; */
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
-  
-  
+
+
+
+
 }
 
 header video {
@@ -169,16 +191,15 @@ header video {
   justify-content: center;
   width: 75%;
   margin-bottom: 10em;
-  
+
 }
 
 
-header iframe{
+header iframe {
   background-color: #303030;
-} 
-
-@media screen and (min-width: 820px) {
 }
+
+
 
 .categorias {
   display: flex;
@@ -188,6 +209,7 @@ header iframe{
   row-gap: 4.5em;
   margin-bottom: 5em;
 }
+
 .categorias ul {
   display: flex;
   align-items: center;
@@ -208,6 +230,7 @@ header iframe{
   font-weight: 700;
   color: #ff0000;
 }
+
 .botoes-cat img {
   visibility: hidden;
   width: 2.5em;
@@ -216,51 +239,51 @@ header iframe{
   cursor: pointer;
 }
 
-.cards{
+.cards {
   border-right: 0.1em solid #c4c4c4;
   border-bottom: 0.1em solid #c4c4c4;
   border-bottom-right-radius: 1em 1em;
 }
 
-.cards > p{
+.cards>p {
   font-size: 3em;
 }
 
-.nav-item{
+.nav-item {
   width: 10%;
   display: flex;
   justify-content: center;
   margin: 0 1em;
 }
 
-.nav-link{
+.nav-link {
   width: 100%;
   font-size: 1em;
   text-align: center;
 }
 
-#pills-tab .nav-link[aria-selected="true"]{
+#pills-tab .nav-link[aria-selected="true"] {
   background-color: #ff0000;
   padding: 0;
 }
 
-.nav-item .nav-link[aria-selected="false"]{
+.nav-item .nav-link[aria-selected="false"] {
   color: #f9f9f9;
   background-color: #303030;
 }
 
-.nav-item .nav-link[aria-selected="false"]:hover{
+.nav-item .nav-link[aria-selected="false"]:hover {
   color: #f9f9f9;
   background-color: #ff0000;
 }
 
-ul.dropdown-menu.p-0.show{
-  background-color: #303030;
+ul.dropdown-menu.p-0.show {
+  background-color: #151515;
   display: flex;
   flex-direction: column;
 }
 
-.patrocinadores{
+.patrocinadores {
   margin: 1em 0;
   padding: 0;
 }
@@ -294,7 +317,7 @@ ul.dropdown-menu.p-0.show{
 .box-facebook,
 .box-twitter,
 .box-instagram,
-.box-youtube{
+.box-youtube {
   border-radius: 50%;
   transform: scale(0.8);
 }
@@ -308,64 +331,57 @@ ul.dropdown-menu.p-0.show{
 .box-instagram,
 .box-instagram img,
 .box-youtube,
-.box-youtube img 
-{
-  -webkit-transition: all 0.5s ease;
+.box-youtube img {
+  transition: all 0.5s ease;
 }
 
 .box-twitch a,
 .box-youtube a,
 .box-instagram a,
 .box-twitter a,
-.box-facebook a
-{
+.box-facebook a {
   transform: scale(0.7);
   border-radius: 50%;
 }
 
 .box-twitch:hover,
-.box-twitch:hover img 
-{
+.box-twitch:hover img {
   background-color: #6441a5;
   transform: scale(1);
   transition: all 0.5s ease-out;
-   
+
 }
 
 .box-twitter:hover,
-.box-twitter:hover img 
-{
+.box-twitter:hover img {
   background-color: #029abc;
   transform: scale(1);
   transition: all 0.5s ease-out;
-   
+
 }
 
 .box-youtube:hover,
-.box-youtube:hover img 
-{
+.box-youtube:hover img {
   background-color: #ff0000;
   transform: scale(1);
   transition: all 0.5s ease-out;
-   
+
 }
 
 .box-facebook:hover,
-.box-facebook:hover img 
-{
+.box-facebook:hover img {
   background-color: #021fb5;
   transform: scale(1);
   transition: all 0.5s ease-out;
-   
+
 }
 
 .box-instagram:hover,
-.box-instagram:hover img 
-{
+.box-instagram:hover img {
   background-color: #c0007a;
   transform: scale(1);
   transition: all 0.5s ease-out;
-   
+
 }
 
 
@@ -407,8 +423,4 @@ footer h4 {
   color: #c4c4c4;
   margin-top: 0.5em;
   width: 100%;
-}
-
-div.teste{
-  width: 80%;
 }

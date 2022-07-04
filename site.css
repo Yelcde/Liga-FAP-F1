@@ -1,0 +1,27 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+main,
+footer {
+    text-align: center;
+    list-style: none;
+    background-color: #303030;
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+
+
+/* .menu-default {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+menu.nav-menu-responsive {
+    display: none;
+} */
