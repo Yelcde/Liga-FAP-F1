@@ -1,134 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 821px)"
-      href="1366-styles.css"
-    />
-    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="1366-cadastro-styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 820px)" href="mobile.css" />
+    <!-- <link
       rel="stylesheet"
       media="screen and (max-width: 820px)"
       href="mobile.css"
-    />
+    /> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-    <script src="carossel.js"></script>
-  </head>
 
-  <body>
+</head>
+
+<body>
     <nav>
-      <div class="nav-menu">
-        <a href="index.html" class="item-nav"
-          ><h3 id="logo-fap">FAP <img id="logo-f1" src="imagens/Logo-F1.svg" alt="" /></h3
-        ></a>
-        <ul class="p-0 m-0 item-nav">
-          <li class="dropdown-cat">
-            <a href="javascript:void(0)" class="dropbtn-cat">Categorias</a>
-            <div class="dropdown-content-cat">
-              <a href="tabelas.html">Diamante</a>
-              <a href="tabelas.html">Ouro</a>
-              <a href="tabelas.html">Prata</a>
-              <a href="tabelas.html">Bronze</a>
-              <a href="tabelas.html">F 2</a>
-            </div>
-          </li>
-          <li class="novidades"><a href="#">Novidades</a></li>
-          <li class="dropdown-sobre">
-            <a href="javascript:void(0)" class="dropbtn-sobre">Sobre</a>
-            <div class="dropdown-content-sobre">
-              <a href="sobre.html">Sobre</a>
-              <a href="regras.html">Regras</a>
-            </div>
-          </li>
-        </ul>
-        <div class="user-icon dropdown-center item-nav">
-          <button class="pe-4 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img id="user-icon" src="imagens/User-Icon.svg" alt=""/>
-          </button>
-          <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-            <li ><a class="dropdown-item p-2" href="#">Login</a></li>
-            <li><a class="dropdown-item p-2" href="#">Cadastre-se</a></li>
-          </ul>
-          <!--
+        <div class="nav-menu">
+            <a href="index.html" class="item-nav">
+                <h3 id="logo-fap">FAP <img id="logo-f1" src="imagens/Logo-F1.svg" alt="" /></h3>
+            </a>
+            <ul class="item-nav">
+                <li class="dropdown-cat">
+                    <a href="javascript:void(0)" class="dropbtn-cat">Categorias</a>
+                    <div class="dropdown-content-cat">
+                        <a href="tabelas.html">Diamante</a>
+                        <a href="tabelas.html">Ouro</a>
+                        <a href="tabelas.html">Prata</a>
+                        <a href="tabelas.html">Bronze</a>
+                        <a href="tabelas.html">F 2</a>
+                    </div>
+                </li>
+                <li class="novidades"><a href="#">Novidades</a></li>
+                <li class="dropdown-sobre">
+                    <a href="javascript:void(0)" class="dropbtn-sobre">Sobre</a>
+                    <div class="dropdown-content-sobre">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="regras.html">Regras</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="user-icon dropdown-center item-nav">
+                <button class="pe-4 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img id="user-icon" src="imagens/User-Icon.svg" alt="" />
+                </button>
+                <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item p-2" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item p-2" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+                <!--
           <a href="user-page.html"
             ><img id="user-icon" src="imagens/User-Icon.svg" alt=""
           /></a>
           -->
+            </div>
         </div>
-      </div>
     </nav>
 
     <header>
-      
-      <video id="f1esports-video" class="video-bg-new home_top_vid" autoplay="yes" playsinline="" muted="yes" loop="yes">
-        <source src="https://downloads.f1esports.com/Videos/Challengers_22_Intro.mp4" type="video/mp4">
-        <source src="" type="video/ogg">
-      </video>
-      
+
     </header>
 
     <main>
-   
-    
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
     </main>
-    
+
     <footer class="pt-5">
-      <h4>Apoio:</h4>
+        <h4>Apoio:</h4>
 
-      <ul class="patrocinadores">
-        <li>
-          <img src="imagens/logo-arturismo.svg" alt="" />
-          <img src="imagens/logo-x4system.svg" alt="" />
-        </li>
-      </ul>
-
-      <div class="midias-sociais">
-        <ul class="botoes-redes-sociais">
-          <li class="box-youtube">
-            <a href="#"><img src="imagens/logo-youtube.svg" alt="" /></a>
-          </li>
-
-          <li class="box-instagram">
-            <a href="#"><img src="imagens/logo-instagram.svg" alt="" /></a>
-          </li>
-
-          <li class="box-twitter">
-            <a href="#"><img src="imagens/logo-twitter.svg" alt="" /></a>
-          </li>
-
-          <li class="box-facebook">
-            <a href="https://www.facebook.com/fastandputos"
-              ><img src="imagens/logo-facebook.svg" alt=""
-            /></a>
-          </li>
-
-          <li class="box-twitch">
-            <a href="https://www.twitch.tv/liga_fap"
-              ><img src="imagens/logo-twitch.svg" alt=""
-            /></a>
-          </li>
+        <ul class="patrocinadores">
+            <li>
+                <img src="imagens/logo-arturismo.svg" alt="" />
+                <img src="imagens/logo-x4system.svg" alt="" />
+            </li>
         </ul>
-      </div>
 
-      <p id="copyright" class="text-center">&copy; 2022 | Pablo Estrela</p>
+        <div class="midias-sociais">
+            <ul class="botoes-redes-sociais">
+                <li class="box-youtube">
+                    <a href="#"><img src="imagens/logo-youtube.svg" alt="" /></a>
+                </li>
+
+                <li class="box-instagram">
+                    <a href="#"><img src="imagens/logo-instagram.svg" alt="" /></a>
+                </li>
+
+                <li class="box-twitter">
+                    <a href="#"><img src="imagens/logo-twitter.svg" alt="" /></a>
+                </li>
+
+                <li class="box-facebook">
+                    <a href="https://www.facebook.com/fastandputos"><img src="imagens/logo-facebook.svg" alt="" /></a>
+                </li>
+
+                <li class="box-twitch">
+                    <a href="https://www.twitch.tv/liga_fap"><img src="imagens/logo-twitch.svg" alt="" /></a>
+                </li>
+            </ul>
+        </div>
+
+        <p id="copyright" class="text-center">&copy; 2022 | Pablo Estrela</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/i18n/defaults-*.min.js"></script>
+
+</body>
+
 </html>
