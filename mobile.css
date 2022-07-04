@@ -2,7 +2,9 @@
   display: none !important;
 } */
 
-
+li.nav-item{
+  width: 50%;
+}
 
 .menu-default {
   display: flex;
