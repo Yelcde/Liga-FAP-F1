@@ -7,6 +7,7 @@
   border: 0;
 }
 
+header,
 main,
 footer {
   background-color: #303030;
@@ -19,6 +20,9 @@ footer {
   color: white;
 }
 
+.categorias-responsivo {
+  display: none;
+}
 
 /*HEADER
 
@@ -178,10 +182,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-
-
 }
 
 header video {
@@ -246,6 +246,10 @@ header iframe {
 
 .cards>p {
   font-size: 3em;
+}
+
+.calendario-responsivo {
+  display: none;
 }
 
 .nav-item {
