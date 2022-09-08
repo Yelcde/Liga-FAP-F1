@@ -29,9 +29,13 @@ footer {
 
 alinha a esquerda os itens do dropdown menu*/
 .nav-menu {
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #303030; */
+  color: #c4c4c4;
+  padding: 10px;
   background-color: #151515;
-  
 }
 
 /*HEADER
@@ -47,6 +51,7 @@ alinha a esquerda os itens do dropdown menu*/
   display: flex;
   justify-content: center;
   width: 30%;
+  margin-bottom: 0;
 }
 
 /* alinha nav-dropdown no fim da tela*/
@@ -157,7 +162,7 @@ ul.p-0.m-0.item-nav {
   /* background-color: #303030; */
   color: #ff0000;
   text-align: center;
-  margin: 0 0 0 0;
+  /* margin: 0 0 0 1em; */
   padding: 0;
 }
 

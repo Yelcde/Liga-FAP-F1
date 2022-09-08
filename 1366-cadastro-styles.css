@@ -25,9 +25,13 @@ footer {
   
   alinha a esquerda os itens do dropdown menu*/
 .nav-menu {
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #303030; */
+  color: #c4c4c4;
+  padding: 10px;
   background-color: #151515;
-  
 }
 
 .nav-menu li {
@@ -38,7 +42,7 @@ footer {
 .item-nav {
   display: flex;
   justify-content: center;
-
+  margin-bottom: 0;
   width: 30%;
 }
 
